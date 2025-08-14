@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "TWCC-App",
+    "slug": "TWCC-App",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#ffffff"
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ttpc.TWCCApp"
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "com.ttpc.TWCCApp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "944f5347-1d01-4904-99cb-166da7c9f382"
+      }
+    }
+  }
+}
