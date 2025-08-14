@@ -27,6 +27,10 @@ import AddNewProduct from '../Screens/AddNewProduct';
 import AllChattingScreen from '../Screens/AllChattingScreen';
 import ViewProduct from '../Screens/ViewProduct';
 
+import PaymentScreen from '../Screens/PaymentScreen';
+//import PaymentScreen from '../Screens/PaymentScreen';
+import PaymentInfo from '../Screens/PaymentInfo';
+
 const Stack = createStackNavigator();
 
 function MyStack( {navigation}){
@@ -94,6 +98,16 @@ function MyStack( {navigation}){
 
 )}
 
+
+ <Stack.Screen
+      name="Signup Stack"
+      component={SignupScreen}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+
  <Stack.Screen
       name="Signin Stack"
       component={SigninScreen}
@@ -101,6 +115,10 @@ function MyStack( {navigation}){
       //       headerLeft: () => <Header  title='About Page' />,
       //     })}
       />
+
+
+
+
 
 
 
@@ -203,6 +221,25 @@ function MyStack( {navigation}){
       //     })}
       />
 
+
+
+  <Stack.Screen
+      name="Payment Screen"
+      component={PaymentScreen}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+
+
+  <Stack.Screen
+      name="Payment Info"
+      component={PaymentInfo}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
 
 
 

@@ -953,6 +953,8 @@ return (
 style={[globalStyles.AppChaguaHudumaTextHomeScreen,{
   color:'white',
   fontFamily:'Bold',
+  marginTop:0,
+  marginBottom:0,
 }]}  
 
 >TANZANIA WOMEN CHAMBER OF COMMERCE</Text>
@@ -962,6 +964,8 @@ style={[globalStyles.AppChaguaHudumaTextHomeScreen,{
 style={[globalStyles.AppChaguaHudumaTextHomeScreen,{
   color:'wheat',
   fontFamily:"Medium",
+  marginTop:0,
+  marginBottom:10,
 }]}  
 
 >For empowering women in business</Text>

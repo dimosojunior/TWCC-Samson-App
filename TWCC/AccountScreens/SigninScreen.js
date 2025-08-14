@@ -308,7 +308,7 @@ console.log("UserData Saved:", userData);
                // backgroundColor:'white'
                marginBottom:20,
               }}
-            // onPress={() => navigation.navigate("Buyer Registration")}
+             onPress={() => navigation.navigate("Signup Stack")}
               >
               
                 <Text style={[styles.registerLbl,

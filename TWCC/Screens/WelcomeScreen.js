@@ -412,7 +412,7 @@ renderItem = {({item}) => <Slide item={item}/>}
 
            {isChecked && (
               <TouchableOpacity
-                onPress={() => navigation.replace('Signin Stack')}
+                onPress={() => navigation.replace('Signup Stack')}
                 style={styles.getstarted}
               >
                 <Text style={{ color: 'white', fontSize: 16 }}>GET STARTED</Text>

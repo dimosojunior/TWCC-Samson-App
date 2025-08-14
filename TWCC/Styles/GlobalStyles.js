@@ -7,6 +7,7 @@ import { StyleSheet, Text,Dimensions, View, Button,Platform } from 'react-native
 //bottomview
 //AppItemContainerHomeScreen
 //AppItemImageHomeScreen
+//AppItemButtonTextHomeScreen
 
 const {height, width} = Dimensions.get('window');
 
@@ -2055,16 +2056,16 @@ RightBtnContainer:{
 
 },
 AppItemButtonTextHomeScreen:{
-   backgroundColor:COLORS.green,
+   backgroundColor:'#015d68',
   textAlign:"center",
   //fontWeight:"bold",
   fontFamily:'Light',
   color:COLORS.white,
   paddingVertical:7,
-  paddingHorizontal:10,
+  paddingHorizontal:20,
   borderRadius:6,
   borderWidth:1,
-  borderColor:COLORS.black,
+  borderColor:'green',
 
 },
 AppWelcomeMsgContainerHomeScreen:{

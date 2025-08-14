@@ -40,6 +40,9 @@ import { useFocusEffect } from '@react-navigation/native';
 
 import { UserContext } from '../UserContext';
 
+//import PaymentScreen from '../Screens/PaymentScreen';
+import PaymentInfo from '../Screens/PaymentInfo';
+
 const { width, height } = Dimensions.get('window');
 const Drawer = createDrawerNavigator();
 function MyDrawer(){
@@ -454,6 +457,37 @@ const [dropdownVisible2, setDropdownVisible2] = useState(false);
         />
 
 
+  {/*  <Drawer.Screen
+          name="Payment"
+          options={{
+            drawerLabel: "Payment",
+            title: "Payment",
+            
+            drawerIcon: () => (
+              <FontAwesome name="home" size={20} color="white" />
+            )
+          }}
+          component={PaymentScreen}
+        />
+
+*/}
+
+
+
+    {/*   <Drawer.Screen
+          name="Payment Info"
+          options={{
+            drawerLabel: "Payment Info",
+            title: "Payment Info",
+            
+            drawerIcon: () => (
+              <FontAwesome name="home" size={20} color="white" />
+            )
+          }}
+          component={PaymentInfo}
+        />
+
+*/}
 
 
       

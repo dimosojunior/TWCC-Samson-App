@@ -353,7 +353,7 @@ keyboardShouldPersistTaps="handled"
                 ]}  
                 
                 >
-                Taarifa  za {username}
+                Full informations  of {username}
                 </Text>
                
 
@@ -489,7 +489,7 @@ keyboardShouldPersistTaps="handled"
   color:'white',
 
 }}>
-  Unaweza kuwasiliana naye kupitia njia hizo hapo chini
+ You can contact them through the channels below
 </Text>
 
 
@@ -501,48 +501,45 @@ keyboardShouldPersistTaps="handled"
   color:'white',
 
 }}>
-  Watu wanaweza kuwasiliana na wewe kupitia njia zifuatazo
+  People can contact you through the following channels
 </Text>
 
 )} 
-
- {phone && (
-         <TouchableOpacity onPress={() => {   Linking.openURL(`tel:${phone}`)}}>
-          <View style={[globalStyles.menuItem, {}]}>
-            <Icon name="phone" color="yellow" size={25}/>
-            <Text style={[globalStyles.menuItemText, {color:'white'}]}>Piga Simu</Text>
-          </View>
-        </TouchableOpacity>)}
+{phone && (
+  <TouchableOpacity onPress={() => { Linking.openURL(`tel:${phone}`) }}>
+    <View style={[globalStyles.menuItem, {}]}>
+      <Icon name="phone" color="yellow" size={25} />
+      <Text style={[globalStyles.menuItemText, { color: 'white' }]}>Call</Text>
+    </View>
+  </TouchableOpacity>
+)}
 
 {phone && (
-        <TouchableOpacity  onPress={() => sendTextMessage(phone, message)}>
-          <View style={[globalStyles.menuItem, {}]}>
-            <Icon name="message" color="red" size={25}/>
-            <Text style={[globalStyles.menuItemText, {color:'white'}]}>Mtumie ujumbe kawaida</Text>
-          </View>
-        </TouchableOpacity>)}
+  <TouchableOpacity onPress={() => sendTextMessage(phone, message)}>
+    <View style={[globalStyles.menuItem, {}]}>
+      <Icon name="message" color="red" size={25} />
+      <Text style={[globalStyles.menuItemText, { color: 'white' }]}>Send a Text Message</Text>
+    </View>
+  </TouchableOpacity>
+)}
 
+{phone && (
+  <TouchableOpacity onPress={() => { Linking.openURL(`whatsapp://send?phone=${phone}&text=${message}`) }}>
+    <View style={[globalStyles.menuItem, {}]}>
+      <FontAwesome name="whatsapp" color="blue" size={25} />
+      <Text style={[globalStyles.menuItemText, { color: 'white' }]}>Chat on WhatsApp</Text>
+    </View>
+  </TouchableOpacity>
+)}
 
-
- {phone && (
-        <TouchableOpacity onPress={() => { Linking.openURL(`whatsapp://send?phone=${phone}&text=${message}`)}}>
-          <View style={[globalStyles.menuItem, {
-
-          }]}>
-            <FontAwesome name="whatsapp" color="blue" size={25}/>
-            <Text style={[globalStyles.menuItemText, {color:'white'}]}>Chati naye whatsapp</Text>
-          </View>
-        </TouchableOpacity>)}
-
-
-
-          {email && (
-         <TouchableOpacity onPress={() => {  Linking.openURL(`mailto:${email}?subject=Hello ${username}&body=${message}`)}}>
-          <View style={[globalStyles.menuItem, {}]}>
-            <Icon name="email" color="white" size={25}/>
-            <Text style={[globalStyles.menuItemText, {color:'white'}]}>Mtumie email</Text>
-          </View>
-        </TouchableOpacity>)}
+{email && (
+  <TouchableOpacity onPress={() => { Linking.openURL(`mailto:${email}?subject=Hello ${username}&body=${message}`) }}>
+    <View style={[globalStyles.menuItem, {}]}>
+      <Icon name="email" color="white" size={25} />
+      <Text style={[globalStyles.menuItemText, { color: 'white' }]}>Send an Email</Text>
+    </View>
+  </TouchableOpacity>
+)}
 
         
 
